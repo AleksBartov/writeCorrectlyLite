@@ -4,13 +4,22 @@ import { Link } from "expo-router";
 
 const forSales = () => {
   return (
-    <View>
-      <Text style={{ fontSize: 38, fontFamily: "Nunito_800ExtraBold" }}>
-        классы с 4 по 11 доступны в платном приложении "Пишу правильно!"
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <Text style={{ fontSize: 20, fontFamily: "Nunito_800ExtraBold" }}>
+        классы с 4 по 11 доступны в
+      </Text>
+      <Text
+        style={{
+          fontSize: 20,
+          fontFamily: "Nunito_800ExtraBold",
+          marginBottom: 50,
+        }}
+      >
+        платном приложении "Пишу правильно!"
       </Text>
       <Link href="https://www.rustore.ru/catalog/app/com.aleksbartov.writecorrectly">
         <Image
-          style={{ width: 200, height: 200 }}
+          style={{ width: 140, height: 140 }}
           source={require("../assets/images/icon.png")}
         />
       </Link>
